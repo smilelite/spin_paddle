@@ -126,7 +126,8 @@ output/rec/
 ```
 其中 best_accuracy.* 是评估集上的最优模型；iter_epoch_x.* 是以 `save_epoch_step` 为间隔保存下来的模型；latest.* 是最后一个epoch的模型。
 
-本复现训练好的模型权重及训练日志地址为(链接：), 下载完成后，将rec_r32_gaspin_bilstm_att_submit.zip文件解压，然后文件夹里面的文件全部拷贝到./inference/rec_r32_gaspin_bilstm_att,以方便后续部署
+本复现训练好的模型权重及训练日志地址为(链接：https://pan.baidu.com/s/1I9k0P1pPGpKnxKSc1zG-AA 
+提取码：n3os), 下载完成后，将rec_r32_gaspin_bilstm_att_submit.zip文件解压，然后文件夹里面的文件全部拷贝到./inference/rec_r32_gaspin_bilstm_att,以方便后续部署
 
 ### 4.2 模型评估
 
