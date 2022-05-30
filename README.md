@@ -130,7 +130,7 @@ output/rec/
 
 ### 4.2 模型评估
 
-评估数据集可以通过 configs/rec/rec_r32_gaspin_bilstm_att.yml 修改Eval中的 data_dir 设置。
+评估数据集可以通过 configs/rec/rec_r32_gaspin_bilstm_att.yml 修改Eval中的 data_dir 设置。同时将Eval下的batch_size_per_card设置成1
 ```
 # GPU 评估， Global.checkpoints 为待测权重
 python3 -m paddle.distributed.launch --gpus '0' tools/eval.py -c configs/rec/rec_r32_gaspin_bilstm_att.yml -o Global.checkpoints=./inference/rec_r32_gaspin_bilstm_att/best_accuracy
@@ -142,15 +142,15 @@ python3 -m paddle.distributed.launch --gpus '0' tools/eval.py -c configs/rec/rec
 
 默认预测图片存储在配置文件的 `infer_img` 字段里，通过`Global.infer_img`进行修改。通过 `-o Global.checkpoints` 加载训练好的参数文件：
 ```
-python3 tools/infer_rec.py -c configs/rec/rec_r32_gaspin_bilstm_att.yml -o Global.pretrained_model=./inference/rec_r32_gaspin_bilstm_att/best_accuracy Global.load_static_weights=false Global.infer_img=./inference/rec_inference/word_1.png
+python3 tools/infer_rec.py -c configs/rec/rec_r32_gaspin_bilstm_att.yml -o Global.pretrained_model=./inference/rec_r32_gaspin_bilstm_att/best_accuracy Global.load_static_weights=false Global.infer_img=./doc/imgs_words_en/word_10.png
 ```
 预测图片：
-![](./inference/rec_inference/word_1.png)
+![](./doc/imgs_words_en/word_10.png)
 得到输入图像的预测结果：
 
 ```
 infer_img: doc/imgs_words/en/word_1.png
-        result: ('joint', 0.9853365)
+        result: ('pain', 0.99999)
 ```
 ## 5. 模型推理部署
 
@@ -174,7 +174,7 @@ python3 tools/export_model.py -c configs/rec/rec_r32_gaspin_bilstm_att.yml -o Gl
 - 自定义模型推理
 
   ```
-  python3 tools/infer/predict_rec.py --image_dir=./inference/rec_inference/word_1.png --rec_model_dir=./inference/rec_r32_gaspin_bilstm_att --rec_image_shape="3, 32, 100" --rec_char_dict_path=./ppocr/utils/dict/spin_dict.txt --use_space_char=False --rec_algorithm="SPIN"
+  python3 tools/infer/predict_rec.py --image_dir=./doc/imgs_words_en/word_10.png --rec_model_dir=./inference/rec_r32_gaspin_bilstm_att --rec_image_shape="3, 32, 100" --rec_char_dict_path=./ppocr/utils/dict/spin_dict.txt --use_space_char=False --rec_algorithm="SPIN"
   ```
 
 ## 6. 自动化测试脚本

@@ -1,0 +1,258 @@
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\socks.py:58: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Callable
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\win32\lib\pywintypes.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp, sys, os
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\pkg_resources\_vendor\pyparsing.py:943: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  collections.MutableMapping.register(ParseResults)
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\pkg_resources\_vendor\pyparsing.py:3245: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  elif isinstance( exprs, collections.Iterable ):
+[2022/05/30 22:02:47] ppocr INFO: Architecture : 
+[2022/05/30 22:02:47] ppocr INFO:     Backbone : 
+[2022/05/30 22:02:47] ppocr INFO:         name : ResNet32
+[2022/05/30 22:02:47] ppocr INFO:         out_channels : 512
+[2022/05/30 22:02:47] ppocr INFO:     Head : 
+[2022/05/30 22:02:47] ppocr INFO:         hidden_size : 256
+[2022/05/30 22:02:47] ppocr INFO:         name : SPINAttentionHead
+[2022/05/30 22:02:47] ppocr INFO:     Neck : 
+[2022/05/30 22:02:47] ppocr INFO:         encoder_type : cascadernn
+[2022/05/30 22:02:47] ppocr INFO:         hidden_size : 256
+[2022/05/30 22:02:47] ppocr INFO:         name : SequenceEncoder
+[2022/05/30 22:02:47] ppocr INFO:         out_channels : [256, 512]
+[2022/05/30 22:02:47] ppocr INFO:         with_linear : True
+[2022/05/30 22:02:47] ppocr INFO:     Transform : 
+[2022/05/30 22:02:47] ppocr INFO:         default_type : 6
+[2022/05/30 22:02:47] ppocr INFO:         loc_lr : 0.1
+[2022/05/30 22:02:47] ppocr INFO:         name : GA_SPIN
+[2022/05/30 22:02:47] ppocr INFO:         offsets : True
+[2022/05/30 22:02:47] ppocr INFO:         stn : True
+[2022/05/30 22:02:47] ppocr INFO:     algorithm : SPIN
+[2022/05/30 22:02:47] ppocr INFO:     in_channels : 1
+[2022/05/30 22:02:47] ppocr INFO:     model_type : rec
+[2022/05/30 22:02:47] ppocr INFO: Eval : 
+[2022/05/30 22:02:47] ppocr INFO:     dataset : 
+[2022/05/30 22:02:47] ppocr INFO:         data_dir : I:/dataset/OCR/STR/evaluation/evaluation/SVTP
+[2022/05/30 22:02:47] ppocr INFO:         name : LMDBDataSet
+[2022/05/30 22:02:47] ppocr INFO:         transforms : 
+[2022/05/30 22:02:47] ppocr INFO:             NRTRDecodeImage : 
+[2022/05/30 22:02:47] ppocr INFO:                 channel_first : False
+[2022/05/30 22:02:47] ppocr INFO:                 img_mode : BGR
+[2022/05/30 22:02:47] ppocr INFO:             SPINAttnLabelEncode : None
+[2022/05/30 22:02:47] ppocr INFO:             SPINRecResizeImg : 
+[2022/05/30 22:02:47] ppocr INFO:                 image_shape : [100, 32]
+[2022/05/30 22:02:47] ppocr INFO:                 interpolation : 2
+[2022/05/30 22:02:47] ppocr INFO:                 mean : [127.5]
+[2022/05/30 22:02:47] ppocr INFO:                 std : [127.5]
+[2022/05/30 22:02:47] ppocr INFO:             KeepKeys : 
+[2022/05/30 22:02:47] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2022/05/30 22:02:47] ppocr INFO:     loader : 
+[2022/05/30 22:02:47] ppocr INFO:         batch_size_per_card : 8
+[2022/05/30 22:02:47] ppocr INFO:         drop_last : False
+[2022/05/30 22:02:47] ppocr INFO:         num_workers : 1
+[2022/05/30 22:02:47] ppocr INFO:         shuffle : False
+[2022/05/30 22:02:47] ppocr INFO: Global : 
+[2022/05/30 22:02:47] ppocr INFO:     cal_metric_during_train : True
+[2022/05/30 22:02:47] ppocr INFO:     character_dict_path : ./ppocr/utils/dict/spin_dict.txt
+[2022/05/30 22:02:47] ppocr INFO:     checkpoints : ./inference/rec_r32_gaspin_bilstm_att/best_accuracy
+[2022/05/30 22:02:47] ppocr INFO:     distributed : False
+[2022/05/30 22:02:47] ppocr INFO:     epoch_num : 6
+[2022/05/30 22:02:47] ppocr INFO:     eval_batch_step : [0, 2000]
+[2022/05/30 22:02:47] ppocr INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2022/05/30 22:02:47] ppocr INFO:     infer_mode : False
+[2022/05/30 22:02:47] ppocr INFO:     log_smooth_window : 50
+[2022/05/30 22:02:47] ppocr INFO:     max_text_length : 25
+[2022/05/30 22:02:47] ppocr INFO:     pretrained_model : None
+[2022/05/30 22:02:47] ppocr INFO:     print_batch_step : 50
+[2022/05/30 22:02:47] ppocr INFO:     save_epoch_step : 3
+[2022/05/30 22:02:47] ppocr INFO:     save_inference_dir : None
+[2022/05/30 22:02:47] ppocr INFO:     save_model_dir : ./output/rec/rec_r32_gaspin_bilstm_att/
+[2022/05/30 22:02:47] ppocr INFO:     save_res_path : ./output/rec/predicts_r32_gaspin_bilstm_att.txt
+[2022/05/30 22:02:47] ppocr INFO:     use_gpu : True
+[2022/05/30 22:02:47] ppocr INFO:     use_space_char : False
+[2022/05/30 22:02:47] ppocr INFO:     use_visualdl : False
+[2022/05/30 22:02:47] ppocr INFO: Loss : 
+[2022/05/30 22:02:47] ppocr INFO:     ignore_index : 0
+[2022/05/30 22:02:47] ppocr INFO:     name : SPINAttentionLoss
+[2022/05/30 22:02:47] ppocr INFO: Metric : 
+[2022/05/30 22:02:47] ppocr INFO:     is_filter : True
+[2022/05/30 22:02:47] ppocr INFO:     main_indicator : acc
+[2022/05/30 22:02:47] ppocr INFO:     name : RecMetric
+[2022/05/30 22:02:47] ppocr INFO: Optimizer : 
+[2022/05/30 22:02:47] ppocr INFO:     beta1 : 0.9
+[2022/05/30 22:02:47] ppocr INFO:     beta2 : 0.999
+[2022/05/30 22:02:47] ppocr INFO:     clip_norm : 5
+[2022/05/30 22:02:47] ppocr INFO:     lr : 
+[2022/05/30 22:02:47] ppocr INFO:         decay_epochs : [3, 4, 5]
+[2022/05/30 22:02:47] ppocr INFO:         name : Piecewise
+[2022/05/30 22:02:47] ppocr INFO:         values : [0.001, 0.0003, 9e-05, 2.7e-05]
+[2022/05/30 22:02:47] ppocr INFO:     name : AdamW
+[2022/05/30 22:02:47] ppocr INFO: PostProcess : 
+[2022/05/30 22:02:47] ppocr INFO:     character_dict_path : ./ppocr/utils/dict/spin_dict.txt
+[2022/05/30 22:02:47] ppocr INFO:     name : SPINAttnLabelDecode
+[2022/05/30 22:02:47] ppocr INFO:     use_space_char : False
+[2022/05/30 22:02:47] ppocr INFO: Train : 
+[2022/05/30 22:02:47] ppocr INFO:     dataset : 
+[2022/05/30 22:02:47] ppocr INFO:         data_dir : ./train_data/data_lmdb_release/training/
+[2022/05/30 22:02:47] ppocr INFO:         name : LMDBDataSet
+[2022/05/30 22:02:47] ppocr INFO:         transforms : 
+[2022/05/30 22:02:47] ppocr INFO:             NRTRDecodeImage : 
+[2022/05/30 22:02:47] ppocr INFO:                 channel_first : False
+[2022/05/30 22:02:47] ppocr INFO:                 img_mode : BGR
+[2022/05/30 22:02:47] ppocr INFO:             SPINAttnLabelEncode : None
+[2022/05/30 22:02:47] ppocr INFO:             SPINRecResizeImg : 
+[2022/05/30 22:02:47] ppocr INFO:                 image_shape : [100, 32]
+[2022/05/30 22:02:47] ppocr INFO:                 interpolation : 2
+[2022/05/30 22:02:47] ppocr INFO:                 mean : [127.5]
+[2022/05/30 22:02:47] ppocr INFO:                 std : [127.5]
+[2022/05/30 22:02:47] ppocr INFO:             KeepKeys : 
+[2022/05/30 22:02:47] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2022/05/30 22:02:47] ppocr INFO:     loader : 
+[2022/05/30 22:02:47] ppocr INFO:         batch_size_per_card : 8
+[2022/05/30 22:02:47] ppocr INFO:         drop_last : True
+[2022/05/30 22:02:47] ppocr INFO:         num_workers : 1
+[2022/05/30 22:02:47] ppocr INFO:         shuffle : True
+[2022/05/30 22:02:47] ppocr INFO: profiler_options : None
+[2022/05/30 22:02:47] ppocr INFO: train with paddle 2.2.2 and device CUDAPlace(0)
+[2022/05/30 22:02:47] ppocr INFO: Initialize indexs of datasets:I:/dataset/OCR/STR/evaluation/evaluation/SVTP
+W0530 22:02:47.564813 18928 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.1, Runtime API Version: 10.2
+W0530 22:02:47.576823 18928 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+[2022/05/30 22:02:51] ppocr INFO: resume from ./inference/rec_r32_gaspin_bilstm_att/best_accuracy
+[2022/05/30 22:02:51] ppocr INFO: metric in ckpt ***************
+[2022/05/30 22:02:51] ppocr INFO: acc:0.90589541082154
+[2022/05/30 22:02:51] ppocr INFO: norm_edit_dis:0.9627389225663741
+[2022/05/30 22:02:51] ppocr INFO: fps:1802.1068940938283
+[2022/05/30 22:02:51] ppocr INFO: best_epoch:6
+[2022/05/30 22:02:51] ppocr INFO: start_epoch:7
+eval model::   0%|          | 0/81 [00:00<?, ?it/s]eval model::   2%|¨‡         | 2/81 [00:00<00:06, 12.31it/s]eval model::   5%|¨…         | 4/81 [00:00<00:05, 12.86it/s]eval model::   7%|¨ƒ         | 6/81 [00:00<00:05, 13.44it/s]eval model::  10%|¨         | 8/81 [00:00<00:05, 13.88it/s]eval model::  12%|¨€¨‡        | 10/81 [00:00<00:04, 14.23it/s]eval model::  15%|¨€¨…        | 12/81 [00:00<00:04, 14.43it/s]eval model::  17%|¨€¨ƒ        | 14/81 [00:00<00:04, 14.60it/s]eval model::  20%|¨€¨        | 16/81 [00:01<00:04, 14.70it/s]eval model::  22%|¨€¨€¨‡       | 18/81 [00:01<00:04, 14.76it/s]eval model::  25%|¨€¨€¨…       | 20/81 [00:01<00:04, 14.80it/s]eval model::  27%|¨€¨€¨ƒ       | 22/81 [00:01<00:03, 14.87it/s]eval model::  30%|¨€¨€¨       | 24/81 [00:01<00:03, 14.85it/s]eval model::  32%|¨€¨€¨€¨‡      | 26/81 [00:01<00:03, 14.90it/s]eval model::  35%|¨€¨€¨€¨…      | 28/81 [00:01<00:03, 14.94it/s]eval model::  37%|¨€¨€¨€¨ƒ      | 30/81 [00:02<00:03, 14.93it/s]eval model::  40%|¨€¨€¨€¨      | 32/81 [00:02<00:03, 14.82it/s]eval model::  42%|¨€¨€¨€¨€¨‡     | 34/81 [00:02<00:03, 14.85it/s]eval model::  44%|¨€¨€¨€¨€¨…     | 36/81 [00:02<00:03, 14.90it/s]eval model::  47%|¨€¨€¨€¨€¨ƒ     | 38/81 [00:02<00:02, 14.92it/s]eval model::  49%|¨€¨€¨€¨€¨     | 40/81 [00:02<00:02, 14.92it/s]eval model::  52%|¨€¨€¨€¨€¨€¨‡    | 42/81 [00:02<00:02, 14.95it/s]eval model::  54%|¨€¨€¨€¨€¨€¨…    | 44/81 [00:02<00:02, 14.97it/s]eval model::  57%|¨€¨€¨€¨€¨€¨ƒ    | 46/81 [00:03<00:02, 14.99it/s]eval model::  59%|¨€¨€¨€¨€¨€¨    | 48/81 [00:03<00:02, 14.92it/s]eval model::  62%|¨€¨€¨€¨€¨€¨€¨‡   | 50/81 [00:03<00:02, 14.85it/s]eval model::  64%|¨€¨€¨€¨€¨€¨€¨…   | 52/81 [00:03<00:01, 14.90it/s]eval model::  67%|¨€¨€¨€¨€¨€¨€¨ƒ   | 54/81 [00:03<00:01, 14.94it/s]eval model::  69%|¨€¨€¨€¨€¨€¨€¨   | 56/81 [00:03<00:01, 14.86it/s]eval model::  72%|¨€¨€¨€¨€¨€¨€¨€¨‡  | 58/81 [00:03<00:01, 14.81it/s]eval model::  74%|¨€¨€¨€¨€¨€¨€¨€¨…  | 60/81 [00:04<00:01, 14.80it/s]eval model::  77%|¨€¨€¨€¨€¨€¨€¨€¨ƒ  | 62/81 [00:04<00:01, 14.80it/s]eval model::  79%|¨€¨€¨€¨€¨€¨€¨€¨  | 64/81 [00:04<00:01, 14.73it/s]eval model::  81%|¨€¨€¨€¨€¨€¨€¨€¨€¨‡ | 66/81 [00:04<00:01, 14.75it/s]eval model::  84%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 68/81 [00:04<00:00, 14.77it/s]eval model::  86%|¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ | 70/81 [00:04<00:00, 14.78it/s]eval model::  89%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 72/81 [00:04<00:00, 14.75it/s]eval model::  91%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‡| 74/81 [00:05<00:00, 14.73it/s]eval model::  94%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 76/81 [00:05<00:00, 14.66it/s]eval model::  96%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ| 78/81 [00:05<00:00, 14.51it/s]eval model::  99%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨| 80/81 [00:05<00:00, 14.50it/s]
+[2022/05/30 22:02:56] ppocr INFO: metric eval ***************
+[2022/05/30 22:02:56] ppocr INFO: acc:0.8531249866699221
+[2022/05/30 22:02:56] ppocr INFO: norm_edit_dis:0.9293030765014648
+[2022/05/30 22:02:56] ppocr INFO: fps:119.70087829843507
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\socks.py:58: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Callable
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\win32\lib\pywintypes.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp, sys, os
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\pkg_resources\_vendor\pyparsing.py:943: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  collections.MutableMapping.register(ParseResults)
+D:\Projects\3rdparty\anaconda\envs\pd2\lib\site-packages\pkg_resources\_vendor\pyparsing.py:3245: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  elif isinstance( exprs, collections.Iterable ):
+[2022/05/30 22:03:34] ppocr INFO: Architecture : 
+[2022/05/30 22:03:34] ppocr INFO:     Backbone : 
+[2022/05/30 22:03:34] ppocr INFO:         name : ResNet32
+[2022/05/30 22:03:34] ppocr INFO:         out_channels : 512
+[2022/05/30 22:03:34] ppocr INFO:     Head : 
+[2022/05/30 22:03:34] ppocr INFO:         hidden_size : 256
+[2022/05/30 22:03:34] ppocr INFO:         name : SPINAttentionHead
+[2022/05/30 22:03:34] ppocr INFO:     Neck : 
+[2022/05/30 22:03:34] ppocr INFO:         encoder_type : cascadernn
+[2022/05/30 22:03:34] ppocr INFO:         hidden_size : 256
+[2022/05/30 22:03:34] ppocr INFO:         name : SequenceEncoder
+[2022/05/30 22:03:34] ppocr INFO:         out_channels : [256, 512]
+[2022/05/30 22:03:34] ppocr INFO:         with_linear : True
+[2022/05/30 22:03:34] ppocr INFO:     Transform : 
+[2022/05/30 22:03:34] ppocr INFO:         default_type : 6
+[2022/05/30 22:03:34] ppocr INFO:         loc_lr : 0.1
+[2022/05/30 22:03:34] ppocr INFO:         name : GA_SPIN
+[2022/05/30 22:03:34] ppocr INFO:         offsets : True
+[2022/05/30 22:03:34] ppocr INFO:         stn : True
+[2022/05/30 22:03:34] ppocr INFO:     algorithm : SPIN
+[2022/05/30 22:03:34] ppocr INFO:     in_channels : 1
+[2022/05/30 22:03:34] ppocr INFO:     model_type : rec
+[2022/05/30 22:03:34] ppocr INFO: Eval : 
+[2022/05/30 22:03:34] ppocr INFO:     dataset : 
+[2022/05/30 22:03:34] ppocr INFO:         data_dir : I:/dataset/OCR/STR/evaluation/evaluation/SVTP
+[2022/05/30 22:03:34] ppocr INFO:         name : LMDBDataSet
+[2022/05/30 22:03:34] ppocr INFO:         transforms : 
+[2022/05/30 22:03:34] ppocr INFO:             NRTRDecodeImage : 
+[2022/05/30 22:03:34] ppocr INFO:                 channel_first : False
+[2022/05/30 22:03:34] ppocr INFO:                 img_mode : BGR
+[2022/05/30 22:03:34] ppocr INFO:             SPINAttnLabelEncode : None
+[2022/05/30 22:03:34] ppocr INFO:             SPINRecResizeImg : 
+[2022/05/30 22:03:34] ppocr INFO:                 image_shape : [100, 32]
+[2022/05/30 22:03:34] ppocr INFO:                 interpolation : 2
+[2022/05/30 22:03:34] ppocr INFO:                 mean : [127.5]
+[2022/05/30 22:03:34] ppocr INFO:                 std : [127.5]
+[2022/05/30 22:03:34] ppocr INFO:             KeepKeys : 
+[2022/05/30 22:03:34] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2022/05/30 22:03:34] ppocr INFO:     loader : 
+[2022/05/30 22:03:34] ppocr INFO:         batch_size_per_card : 1
+[2022/05/30 22:03:34] ppocr INFO:         drop_last : False
+[2022/05/30 22:03:34] ppocr INFO:         num_workers : 1
+[2022/05/30 22:03:34] ppocr INFO:         shuffle : False
+[2022/05/30 22:03:34] ppocr INFO: Global : 
+[2022/05/30 22:03:34] ppocr INFO:     cal_metric_during_train : True
+[2022/05/30 22:03:34] ppocr INFO:     character_dict_path : ./ppocr/utils/dict/spin_dict.txt
+[2022/05/30 22:03:34] ppocr INFO:     checkpoints : ./inference/rec_r32_gaspin_bilstm_att/best_accuracy
+[2022/05/30 22:03:34] ppocr INFO:     distributed : False
+[2022/05/30 22:03:34] ppocr INFO:     epoch_num : 6
+[2022/05/30 22:03:34] ppocr INFO:     eval_batch_step : [0, 2000]
+[2022/05/30 22:03:34] ppocr INFO:     infer_img : doc/imgs_words/ch/word_1.jpg
+[2022/05/30 22:03:34] ppocr INFO:     infer_mode : False
+[2022/05/30 22:03:34] ppocr INFO:     log_smooth_window : 50
+[2022/05/30 22:03:34] ppocr INFO:     max_text_length : 25
+[2022/05/30 22:03:34] ppocr INFO:     pretrained_model : None
+[2022/05/30 22:03:34] ppocr INFO:     print_batch_step : 50
+[2022/05/30 22:03:34] ppocr INFO:     save_epoch_step : 3
+[2022/05/30 22:03:34] ppocr INFO:     save_inference_dir : None
+[2022/05/30 22:03:34] ppocr INFO:     save_model_dir : ./output/rec/rec_r32_gaspin_bilstm_att/
+[2022/05/30 22:03:34] ppocr INFO:     save_res_path : ./output/rec/predicts_r32_gaspin_bilstm_att.txt
+[2022/05/30 22:03:34] ppocr INFO:     use_gpu : True
+[2022/05/30 22:03:34] ppocr INFO:     use_space_char : False
+[2022/05/30 22:03:34] ppocr INFO:     use_visualdl : False
+[2022/05/30 22:03:34] ppocr INFO: Loss : 
+[2022/05/30 22:03:34] ppocr INFO:     ignore_index : 0
+[2022/05/30 22:03:34] ppocr INFO:     name : SPINAttentionLoss
+[2022/05/30 22:03:34] ppocr INFO: Metric : 
+[2022/05/30 22:03:34] ppocr INFO:     is_filter : True
+[2022/05/30 22:03:34] ppocr INFO:     main_indicator : acc
+[2022/05/30 22:03:34] ppocr INFO:     name : RecMetric
+[2022/05/30 22:03:34] ppocr INFO: Optimizer : 
+[2022/05/30 22:03:34] ppocr INFO:     beta1 : 0.9
+[2022/05/30 22:03:34] ppocr INFO:     beta2 : 0.999
+[2022/05/30 22:03:34] ppocr INFO:     clip_norm : 5
+[2022/05/30 22:03:34] ppocr INFO:     lr : 
+[2022/05/30 22:03:34] ppocr INFO:         decay_epochs : [3, 4, 5]
+[2022/05/30 22:03:34] ppocr INFO:         name : Piecewise
+[2022/05/30 22:03:34] ppocr INFO:         values : [0.001, 0.0003, 9e-05, 2.7e-05]
+[2022/05/30 22:03:34] ppocr INFO:     name : AdamW
+[2022/05/30 22:03:34] ppocr INFO: PostProcess : 
+[2022/05/30 22:03:34] ppocr INFO:     character_dict_path : ./ppocr/utils/dict/spin_dict.txt
+[2022/05/30 22:03:34] ppocr INFO:     name : SPINAttnLabelDecode
+[2022/05/30 22:03:34] ppocr INFO:     use_space_char : False
+[2022/05/30 22:03:34] ppocr INFO: Train : 
+[2022/05/30 22:03:34] ppocr INFO:     dataset : 
+[2022/05/30 22:03:34] ppocr INFO:         data_dir : ./train_data/data_lmdb_release/training/
+[2022/05/30 22:03:34] ppocr INFO:         name : LMDBDataSet
+[2022/05/30 22:03:34] ppocr INFO:         transforms : 
+[2022/05/30 22:03:34] ppocr INFO:             NRTRDecodeImage : 
+[2022/05/30 22:03:34] ppocr INFO:                 channel_first : False
+[2022/05/30 22:03:34] ppocr INFO:                 img_mode : BGR
+[2022/05/30 22:03:34] ppocr INFO:             SPINAttnLabelEncode : None
+[2022/05/30 22:03:34] ppocr INFO:             SPINRecResizeImg : 
+[2022/05/30 22:03:34] ppocr INFO:                 image_shape : [100, 32]
+[2022/05/30 22:03:34] ppocr INFO:                 interpolation : 2
+[2022/05/30 22:03:34] ppocr INFO:                 mean : [127.5]
+[2022/05/30 22:03:34] ppocr INFO:                 std : [127.5]
+[2022/05/30 22:03:34] ppocr INFO:             KeepKeys : 
+[2022/05/30 22:03:34] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2022/05/30 22:03:34] ppocr INFO:     loader : 
+[2022/05/30 22:03:34] ppocr INFO:         batch_size_per_card : 8
+[2022/05/30 22:03:34] ppocr INFO:         drop_last : True
+[2022/05/30 22:03:34] ppocr INFO:         num_workers : 1
+[2022/05/30 22:03:34] ppocr INFO:         shuffle : True
+[2022/05/30 22:03:34] ppocr INFO: profiler_options : None
+[2022/05/30 22:03:34] ppocr INFO: train with paddle 2.2.2 and device CUDAPlace(0)
+[2022/05/30 22:03:34] ppocr INFO: Initialize indexs of datasets:I:/dataset/OCR/STR/evaluation/evaluation/SVTP
+W0530 22:03:34.941556 15256 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.1, Runtime API Version: 10.2
+W0530 22:03:34.951565 15256 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+[2022/05/30 22:03:37] ppocr INFO: resume from ./inference/rec_r32_gaspin_bilstm_att/best_accuracy
+[2022/05/30 22:03:37] ppocr INFO: metric in ckpt ***************
+[2022/05/30 22:03:37] ppocr INFO: acc:0.90589541082154
+[2022/05/30 22:03:37] ppocr INFO: norm_edit_dis:0.9627389225663741
+[2022/05/30 22:03:37] ppocr INFO: fps:1802.1068940938283
+[2022/05/30 22:03:37] ppocr INFO: best_epoch:6
+[2022/05/30 22:03:37] ppocr INFO: start_epoch:7
+eval model::   0%|          | 0/645 [00:00<?, ?it/s]eval model::   0%|          | 2/645 [00:00<00:44, 14.57it/s]eval model::   1%|          | 4/645 [00:00<00:43, 14.74it/s]eval model::   1%|          | 6/645 [00:00<00:42, 15.16it/s]eval model::   1%|          | 8/645 [00:00<00:42, 15.09it/s]eval model::   2%|¨‡         | 10/645 [00:00<00:40, 15.71it/s]eval model::   2%|¨‡         | 12/645 [00:00<00:41, 15.32it/s]eval model::   2%|¨‡         | 14/645 [00:00<00:41, 15.37it/s]eval model::   2%|¨‡         | 16/645 [00:01<00:40, 15.44it/s]eval model::   3%|¨†         | 18/645 [00:01<00:40, 15.53it/s]eval model::   3%|¨†         | 20/645 [00:01<00:39, 15.81it/s]eval model::   3%|¨†         | 22/645 [00:01<00:38, 16.09it/s]eval model::   4%|¨†         | 24/645 [00:01<00:38, 16.02it/s]eval model::   4%|¨…         | 26/645 [00:01<00:39, 15.67it/s]eval model::   4%|¨…         | 28/645 [00:01<00:39, 15.62it/s]eval model::   5%|¨…         | 30/645 [00:01<00:39, 15.47it/s]eval model::   5%|¨…         | 32/645 [00:02<00:41, 14.72it/s]eval model::   5%|¨„         | 34/645 [00:02<00:41, 14.66it/s]eval model::   6%|¨„         | 36/645 [00:02<00:41, 14.83it/s]eval model::   6%|¨„         | 38/645 [00:02<00:41, 14.53it/s]eval model::   6%|¨„         | 40/645 [00:02<00:39, 15.21it/s]eval model::   7%|¨ƒ         | 42/645 [00:02<00:40, 14.92it/s]eval model::   7%|¨ƒ         | 44/645 [00:02<00:41, 14.34it/s]eval model::   7%|¨ƒ         | 46/645 [00:03<00:43, 13.76it/s]eval model::   7%|¨ƒ         | 48/645 [00:03<00:43, 13.71it/s]eval model::   8%|¨‚         | 50/645 [00:03<00:43, 13.70it/s]eval model::   8%|¨‚         | 52/645 [00:03<00:46, 12.68it/s]eval model::   8%|¨‚         | 54/645 [00:03<00:43, 13.49it/s]eval model::   9%|¨‚         | 56/645 [00:03<00:42, 13.89it/s]eval model::   9%|¨         | 58/645 [00:03<00:41, 14.03it/s]eval model::   9%|¨         | 60/645 [00:04<00:41, 13.98it/s]eval model::  10%|¨         | 62/645 [00:04<00:41, 13.89it/s]eval model::  10%|¨         | 64/645 [00:04<00:40, 14.37it/s]eval model::  10%|¨€         | 66/645 [00:04<00:38, 14.88it/s]eval model::  11%|¨€         | 68/645 [00:04<00:37, 15.20it/s]eval model::  11%|¨€         | 70/645 [00:04<00:36, 15.64it/s]eval model::  11%|¨€         | 72/645 [00:04<00:34, 16.53it/s]eval model::  11%|¨€¨‡        | 74/645 [00:04<00:33, 17.21it/s]eval model::  12%|¨€¨‡        | 76/645 [00:05<00:32, 17.68it/s]eval model::  12%|¨€¨‡        | 78/645 [00:05<00:33, 16.83it/s]eval model::  12%|¨€¨‡        | 80/645 [00:05<00:38, 14.84it/s]eval model::  13%|¨€¨†        | 82/645 [00:05<00:35, 15.67it/s]eval model::  13%|¨€¨†        | 84/645 [00:05<00:34, 16.42it/s]eval model::  13%|¨€¨†        | 86/645 [00:05<00:33, 16.78it/s]eval model::  14%|¨€¨†        | 88/645 [00:05<00:32, 17.35it/s]eval model::  14%|¨€¨…        | 90/645 [00:05<00:31, 17.41it/s]eval model::  14%|¨€¨…        | 92/645 [00:06<00:31, 17.53it/s]eval model::  15%|¨€¨…        | 94/645 [00:06<00:31, 17.58it/s]eval model::  15%|¨€¨…        | 96/645 [00:06<00:30, 17.81it/s]eval model::  15%|¨€¨„        | 98/645 [00:06<00:29, 18.31it/s]eval model::  16%|¨€¨„        | 100/645 [00:06<00:29, 18.37it/s]eval model::  16%|¨€¨„        | 102/645 [00:06<00:30, 17.96it/s]eval model::  16%|¨€¨„        | 104/645 [00:06<00:30, 17.73it/s]eval model::  16%|¨€¨ƒ        | 106/645 [00:06<00:30, 17.91it/s]eval model::  17%|¨€¨ƒ        | 108/645 [00:06<00:29, 18.18it/s]eval model::  17%|¨€¨ƒ        | 110/645 [00:06<00:28, 18.58it/s]eval model::  17%|¨€¨ƒ        | 112/645 [00:07<00:28, 18.71it/s]eval model::  18%|¨€¨‚        | 114/645 [00:07<00:28, 18.60it/s]eval model::  18%|¨€¨‚        | 116/645 [00:07<00:29, 17.97it/s]eval model::  18%|¨€¨‚        | 118/645 [00:07<00:29, 17.93it/s]eval model::  19%|¨€¨‚        | 120/645 [00:07<00:29, 17.76it/s]eval model::  19%|¨€¨        | 122/645 [00:07<00:28, 18.23it/s]eval model::  19%|¨€¨        | 124/645 [00:07<00:28, 18.57it/s]eval model::  20%|¨€¨        | 126/645 [00:07<00:27, 18.86it/s]eval model::  20%|¨€¨        | 128/645 [00:07<00:27, 18.49it/s]eval model::  20%|¨€¨€        | 130/645 [00:08<00:28, 17.90it/s]eval model::  20%|¨€¨€        | 132/645 [00:08<00:28, 17.98it/s]eval model::  21%|¨€¨€        | 134/645 [00:08<00:28, 17.94it/s]eval model::  21%|¨€¨€        | 136/645 [00:08<00:28, 17.62it/s]eval model::  21%|¨€¨€¨‡       | 138/645 [00:08<00:29, 17.46it/s]eval model::  22%|¨€¨€¨‡       | 140/645 [00:08<00:29, 17.30it/s]eval model::  22%|¨€¨€¨‡       | 142/645 [00:08<00:28, 17.46it/s]eval model::  22%|¨€¨€¨‡       | 144/645 [00:08<00:29, 16.99it/s]eval model::  23%|¨€¨€¨†       | 146/645 [00:09<00:29, 16.76it/s]eval model::  23%|¨€¨€¨†       | 148/645 [00:09<00:29, 16.65it/s]eval model::  23%|¨€¨€¨†       | 150/645 [00:09<00:29, 16.77it/s]eval model::  24%|¨€¨€¨†       | 152/645 [00:09<00:28, 17.30it/s]eval model::  24%|¨€¨€¨…       | 154/645 [00:09<00:28, 17.46it/s]eval model::  24%|¨€¨€¨…       | 156/645 [00:09<00:29, 16.78it/s]eval model::  24%|¨€¨€¨…       | 158/645 [00:09<00:31, 15.49it/s]eval model::  25%|¨€¨€¨…       | 160/645 [00:09<00:34, 13.97it/s]eval model::  25%|¨€¨€¨„       | 162/645 [00:10<00:35, 13.74it/s]eval model::  25%|¨€¨€¨„       | 164/645 [00:10<00:34, 13.95it/s]eval model::  26%|¨€¨€¨„       | 166/645 [00:10<00:33, 14.37it/s]eval model::  26%|¨€¨€¨„       | 168/645 [00:10<00:33, 14.13it/s]eval model::  26%|¨€¨€¨ƒ       | 170/645 [00:10<00:34, 13.79it/s]eval model::  27%|¨€¨€¨ƒ       | 172/645 [00:10<00:34, 13.70it/s]eval model::  27%|¨€¨€¨ƒ       | 174/645 [00:10<00:33, 13.87it/s]eval model::  27%|¨€¨€¨ƒ       | 176/645 [00:11<00:32, 14.29it/s]eval model::  28%|¨€¨€¨‚       | 178/645 [00:11<00:32, 14.41it/s]eval model::  28%|¨€¨€¨‚       | 180/645 [00:11<00:32, 14.09it/s]eval model::  28%|¨€¨€¨‚       | 182/645 [00:11<00:32, 14.24it/s]eval model::  29%|¨€¨€¨‚       | 184/645 [00:11<00:32, 14.37it/s]eval model::  29%|¨€¨€¨       | 186/645 [00:11<00:31, 14.73it/s]eval model::  29%|¨€¨€¨       | 188/645 [00:11<00:30, 14.98it/s]eval model::  29%|¨€¨€¨       | 190/645 [00:12<00:30, 14.70it/s]eval model::  30%|¨€¨€¨       | 192/645 [00:12<00:29, 15.52it/s]eval model::  30%|¨€¨€¨€       | 194/645 [00:12<00:29, 15.47it/s]eval model::  30%|¨€¨€¨€       | 196/645 [00:12<00:28, 15.55it/s]eval model::  31%|¨€¨€¨€       | 198/645 [00:12<00:28, 15.53it/s]eval model::  31%|¨€¨€¨€       | 200/645 [00:12<00:27, 15.97it/s]eval model::  31%|¨€¨€¨€¨‡      | 202/645 [00:12<00:28, 15.71it/s]eval model::  32%|¨€¨€¨€¨‡      | 204/645 [00:12<00:28, 15.68it/s]eval model::  32%|¨€¨€¨€¨‡      | 206/645 [00:13<00:28, 15.41it/s]eval model::  32%|¨€¨€¨€¨‡      | 208/645 [00:13<00:28, 15.12it/s]eval model::  33%|¨€¨€¨€¨†      | 210/645 [00:13<00:29, 14.98it/s]eval model::  33%|¨€¨€¨€¨†      | 212/645 [00:13<00:29, 14.76it/s]eval model::  33%|¨€¨€¨€¨†      | 214/645 [00:13<00:28, 14.94it/s]eval model::  33%|¨€¨€¨€¨†      | 216/645 [00:13<00:27, 15.70it/s]eval model::  34%|¨€¨€¨€¨…      | 218/645 [00:13<00:26, 16.09it/s]eval model::  34%|¨€¨€¨€¨…      | 220/645 [00:13<00:28, 15.15it/s]eval model::  34%|¨€¨€¨€¨…      | 222/645 [00:14<00:27, 15.42it/s]eval model::  35%|¨€¨€¨€¨…      | 224/645 [00:14<00:27, 15.48it/s]eval model::  35%|¨€¨€¨€¨„      | 226/645 [00:14<00:25, 16.32it/s]eval model::  35%|¨€¨€¨€¨„      | 228/645 [00:14<00:26, 15.69it/s]eval model::  36%|¨€¨€¨€¨„      | 230/645 [00:14<00:25, 16.24it/s]eval model::  36%|¨€¨€¨€¨„      | 232/645 [00:14<00:24, 16.90it/s]eval model::  36%|¨€¨€¨€¨ƒ      | 234/645 [00:14<00:23, 17.53it/s]eval model::  37%|¨€¨€¨€¨ƒ      | 236/645 [00:14<00:22, 18.01it/s]eval model::  37%|¨€¨€¨€¨ƒ      | 238/645 [00:15<00:22, 18.20it/s]eval model::  37%|¨€¨€¨€¨ƒ      | 240/645 [00:15<00:22, 18.38it/s]eval model::  38%|¨€¨€¨€¨‚      | 242/645 [00:15<00:21, 18.57it/s]eval model::  38%|¨€¨€¨€¨‚      | 244/645 [00:15<00:21, 18.71it/s]eval model::  38%|¨€¨€¨€¨‚      | 246/645 [00:15<00:21, 18.70it/s]eval model::  38%|¨€¨€¨€¨‚      | 248/645 [00:15<00:21, 18.64it/s]eval model::  39%|¨€¨€¨€¨      | 250/645 [00:15<00:21, 17.99it/s]eval model::  39%|¨€¨€¨€¨      | 252/645 [00:15<00:22, 17.57it/s]eval model::  39%|¨€¨€¨€¨      | 254/645 [00:15<00:22, 17.47it/s]eval model::  40%|¨€¨€¨€¨      | 256/645 [00:16<00:21, 17.81it/s]eval model::  40%|¨€¨€¨€¨€      | 258/645 [00:16<00:21, 17.87it/s]eval model::  40%|¨€¨€¨€¨€      | 260/645 [00:16<00:21, 18.20it/s]eval model::  41%|¨€¨€¨€¨€      | 262/645 [00:16<00:22, 17.38it/s]eval model::  41%|¨€¨€¨€¨€      | 264/645 [00:16<00:21, 17.66it/s]eval model::  41%|¨€¨€¨€¨€      | 266/645 [00:16<00:21, 17.87it/s]eval model::  42%|¨€¨€¨€¨€¨‡     | 268/645 [00:16<00:21, 17.81it/s]eval model::  42%|¨€¨€¨€¨€¨‡     | 270/645 [00:16<00:20, 17.97it/s]eval model::  42%|¨€¨€¨€¨€¨‡     | 272/645 [00:16<00:20, 18.12it/s]eval model::  42%|¨€¨€¨€¨€¨‡     | 274/645 [00:17<00:20, 18.19it/s]eval model::  43%|¨€¨€¨€¨€¨†     | 276/645 [00:17<00:20, 18.28it/s]eval model::  43%|¨€¨€¨€¨€¨†     | 278/645 [00:17<00:20, 18.20it/s]eval model::  43%|¨€¨€¨€¨€¨†     | 280/645 [00:17<00:19, 18.34it/s]eval model::  44%|¨€¨€¨€¨€¨†     | 282/645 [00:17<00:20, 17.82it/s]eval model::  44%|¨€¨€¨€¨€¨…     | 284/645 [00:17<00:20, 17.54it/s]eval model::  44%|¨€¨€¨€¨€¨…     | 286/645 [00:17<00:20, 17.77it/s]eval model::  45%|¨€¨€¨€¨€¨…     | 288/645 [00:17<00:20, 17.84it/s]eval model::  45%|¨€¨€¨€¨€¨…     | 290/645 [00:17<00:20, 17.38it/s]eval model::  45%|¨€¨€¨€¨€¨„     | 292/645 [00:18<00:20, 16.98it/s]eval model::  46%|¨€¨€¨€¨€¨„     | 294/645 [00:18<00:21, 16.54it/s]eval model::  46%|¨€¨€¨€¨€¨„     | 296/645 [00:18<00:20, 17.17it/s]eval model::  46%|¨€¨€¨€¨€¨„     | 298/645 [00:18<00:19, 17.46it/s]eval model::  47%|¨€¨€¨€¨€¨ƒ     | 300/645 [00:18<00:19, 17.85it/s]eval model::  47%|¨€¨€¨€¨€¨ƒ     | 302/645 [00:18<00:19, 18.04it/s]eval model::  47%|¨€¨€¨€¨€¨ƒ     | 304/645 [00:18<00:18, 18.08it/s]eval model::  47%|¨€¨€¨€¨€¨ƒ     | 306/645 [00:18<00:18, 18.25it/s]eval model::  48%|¨€¨€¨€¨€¨‚     | 308/645 [00:18<00:18, 18.43it/s]eval model::  48%|¨€¨€¨€¨€¨‚     | 310/645 [00:19<00:18, 18.60it/s]eval model::  48%|¨€¨€¨€¨€¨‚     | 312/645 [00:19<00:17, 18.73it/s]eval model::  49%|¨€¨€¨€¨€¨‚     | 314/645 [00:19<00:17, 18.61it/s]eval model::  49%|¨€¨€¨€¨€¨     | 316/645 [00:19<00:17, 18.79it/s]eval model::  49%|¨€¨€¨€¨€¨     | 318/645 [00:19<00:17, 18.91it/s]eval model::  50%|¨€¨€¨€¨€¨     | 320/645 [00:19<00:17, 19.00it/s]eval model::  50%|¨€¨€¨€¨€¨     | 322/645 [00:19<00:16, 19.07it/s]eval model::  50%|¨€¨€¨€¨€¨€     | 324/645 [00:19<00:17, 18.79it/s]eval model::  51%|¨€¨€¨€¨€¨€     | 326/645 [00:19<00:17, 18.40it/s]eval model::  51%|¨€¨€¨€¨€¨€     | 328/645 [00:19<00:17, 18.43it/s]eval model::  51%|¨€¨€¨€¨€¨€     | 330/645 [00:20<00:17, 18.45it/s]eval model::  51%|¨€¨€¨€¨€¨€¨‡    | 332/645 [00:20<00:17, 18.11it/s]eval model::  52%|¨€¨€¨€¨€¨€¨‡    | 334/645 [00:20<00:17, 17.77it/s]eval model::  52%|¨€¨€¨€¨€¨€¨‡    | 336/645 [00:20<00:18, 16.43it/s]eval model::  52%|¨€¨€¨€¨€¨€¨‡    | 338/645 [00:20<00:20, 15.24it/s]eval model::  53%|¨€¨€¨€¨€¨€¨†    | 340/645 [00:20<00:19, 15.79it/s]eval model::  53%|¨€¨€¨€¨€¨€¨†    | 342/645 [00:20<00:19, 15.92it/s]eval model::  53%|¨€¨€¨€¨€¨€¨†    | 344/645 [00:20<00:19, 15.64it/s]eval model::  54%|¨€¨€¨€¨€¨€¨†    | 346/645 [00:21<00:19, 15.24it/s]eval model::  54%|¨€¨€¨€¨€¨€¨…    | 348/645 [00:21<00:20, 14.60it/s]eval model::  54%|¨€¨€¨€¨€¨€¨…    | 350/645 [00:21<00:19, 14.96it/s]eval model::  55%|¨€¨€¨€¨€¨€¨…    | 352/645 [00:21<00:19, 15.39it/s]eval model::  55%|¨€¨€¨€¨€¨€¨…    | 354/645 [00:21<00:17, 16.17it/s]eval model::  55%|¨€¨€¨€¨€¨€¨„    | 356/645 [00:21<00:17, 16.85it/s]eval model::  56%|¨€¨€¨€¨€¨€¨„    | 358/645 [00:21<00:16, 16.92it/s]eval model::  56%|¨€¨€¨€¨€¨€¨„    | 360/645 [00:21<00:16, 17.41it/s]eval model::  56%|¨€¨€¨€¨€¨€¨„    | 362/645 [00:22<00:15, 17.82it/s]eval model::  56%|¨€¨€¨€¨€¨€¨ƒ    | 364/645 [00:22<00:15, 18.07it/s]eval model::  57%|¨€¨€¨€¨€¨€¨ƒ    | 366/645 [00:22<00:15, 18.14it/s]eval model::  57%|¨€¨€¨€¨€¨€¨ƒ    | 368/645 [00:22<00:15, 18.40it/s]eval model::  57%|¨€¨€¨€¨€¨€¨ƒ    | 370/645 [00:22<00:14, 18.43it/s]eval model::  58%|¨€¨€¨€¨€¨€¨‚    | 372/645 [00:22<00:14, 18.36it/s]eval model::  58%|¨€¨€¨€¨€¨€¨‚    | 374/645 [00:22<00:14, 18.50it/s]eval model::  58%|¨€¨€¨€¨€¨€¨‚    | 376/645 [00:22<00:14, 18.50it/s]eval model::  59%|¨€¨€¨€¨€¨€¨‚    | 378/645 [00:22<00:14, 18.45it/s]eval model::  59%|¨€¨€¨€¨€¨€¨    | 380/645 [00:23<00:14, 18.22it/s]eval model::  59%|¨€¨€¨€¨€¨€¨    | 382/645 [00:23<00:15, 17.44it/s]eval model::  60%|¨€¨€¨€¨€¨€¨    | 384/645 [00:23<00:15, 17.11it/s]eval model::  60%|¨€¨€¨€¨€¨€¨    | 386/645 [00:23<00:15, 17.19it/s]eval model::  60%|¨€¨€¨€¨€¨€¨€    | 388/645 [00:23<00:14, 17.56it/s]eval model::  60%|¨€¨€¨€¨€¨€¨€    | 390/645 [00:23<00:14, 17.28it/s]eval model::  61%|¨€¨€¨€¨€¨€¨€    | 392/645 [00:23<00:16, 14.95it/s]eval model::  61%|¨€¨€¨€¨€¨€¨€    | 394/645 [00:23<00:17, 14.30it/s]eval model::  61%|¨€¨€¨€¨€¨€¨€¨‡   | 396/645 [00:24<00:16, 14.77it/s]eval model::  62%|¨€¨€¨€¨€¨€¨€¨‡   | 398/645 [00:24<00:15, 15.53it/s]eval model::  62%|¨€¨€¨€¨€¨€¨€¨‡   | 400/645 [00:24<00:15, 15.85it/s]eval model::  62%|¨€¨€¨€¨€¨€¨€¨‡   | 402/645 [00:24<00:14, 16.44it/s]eval model::  63%|¨€¨€¨€¨€¨€¨€¨†   | 404/645 [00:24<00:14, 16.84it/s]eval model::  63%|¨€¨€¨€¨€¨€¨€¨†   | 406/645 [00:24<00:13, 17.08it/s]eval model::  63%|¨€¨€¨€¨€¨€¨€¨†   | 408/645 [00:24<00:13, 17.53it/s]eval model::  64%|¨€¨€¨€¨€¨€¨€¨†   | 410/645 [00:24<00:13, 17.48it/s]eval model::  64%|¨€¨€¨€¨€¨€¨€¨…   | 412/645 [00:24<00:13, 17.78it/s]eval model::  64%|¨€¨€¨€¨€¨€¨€¨…   | 414/645 [00:25<00:12, 18.09it/s]eval model::  64%|¨€¨€¨€¨€¨€¨€¨…   | 416/645 [00:25<00:12, 18.26it/s]eval model::  65%|¨€¨€¨€¨€¨€¨€¨…   | 418/645 [00:25<00:13, 17.28it/s]eval model::  65%|¨€¨€¨€¨€¨€¨€¨„   | 420/645 [00:25<00:13, 16.79it/s]eval model::  65%|¨€¨€¨€¨€¨€¨€¨„   | 422/645 [00:25<00:13, 16.79it/s]eval model::  66%|¨€¨€¨€¨€¨€¨€¨„   | 424/645 [00:25<00:13, 16.75it/s]eval model::  66%|¨€¨€¨€¨€¨€¨€¨„   | 426/645 [00:25<00:13, 16.80it/s]eval model::  66%|¨€¨€¨€¨€¨€¨€¨ƒ   | 428/645 [00:25<00:12, 17.37it/s]eval model::  67%|¨€¨€¨€¨€¨€¨€¨ƒ   | 430/645 [00:26<00:12, 17.37it/s]eval model::  67%|¨€¨€¨€¨€¨€¨€¨ƒ   | 432/645 [00:26<00:11, 17.79it/s]eval model::  67%|¨€¨€¨€¨€¨€¨€¨ƒ   | 434/645 [00:26<00:11, 18.00it/s]eval model::  68%|¨€¨€¨€¨€¨€¨€¨‚   | 436/645 [00:26<00:11, 17.85it/s]eval model::  68%|¨€¨€¨€¨€¨€¨€¨‚   | 438/645 [00:26<00:11, 17.95it/s]eval model::  68%|¨€¨€¨€¨€¨€¨€¨‚   | 440/645 [00:26<00:11, 17.96it/s]eval model::  69%|¨€¨€¨€¨€¨€¨€¨‚   | 442/645 [00:26<00:11, 17.88it/s]eval model::  69%|¨€¨€¨€¨€¨€¨€¨   | 444/645 [00:26<00:11, 17.54it/s]eval model::  69%|¨€¨€¨€¨€¨€¨€¨   | 446/645 [00:26<00:11, 17.77it/s]eval model::  69%|¨€¨€¨€¨€¨€¨€¨   | 448/645 [00:27<00:10, 17.97it/s]eval model::  70%|¨€¨€¨€¨€¨€¨€¨   | 450/645 [00:27<00:10, 18.28it/s]eval model::  70%|¨€¨€¨€¨€¨€¨€¨€   | 452/645 [00:27<00:10, 18.34it/s]eval model::  70%|¨€¨€¨€¨€¨€¨€¨€   | 454/645 [00:27<00:10, 18.29it/s]eval model::  71%|¨€¨€¨€¨€¨€¨€¨€   | 456/645 [00:27<00:10, 18.45it/s]eval model::  71%|¨€¨€¨€¨€¨€¨€¨€   | 458/645 [00:27<00:10, 18.07it/s]eval model::  71%|¨€¨€¨€¨€¨€¨€¨€¨‡  | 460/645 [00:27<00:10, 17.39it/s]eval model::  72%|¨€¨€¨€¨€¨€¨€¨€¨‡  | 462/645 [00:27<00:10, 17.38it/s]eval model::  72%|¨€¨€¨€¨€¨€¨€¨€¨‡  | 464/645 [00:27<00:10, 17.47it/s]eval model::  72%|¨€¨€¨€¨€¨€¨€¨€¨‡  | 466/645 [00:28<00:10, 17.54it/s]eval model::  73%|¨€¨€¨€¨€¨€¨€¨€¨†  | 468/645 [00:28<00:10, 16.95it/s]eval model::  73%|¨€¨€¨€¨€¨€¨€¨€¨†  | 470/645 [00:28<00:10, 17.17it/s]eval model::  73%|¨€¨€¨€¨€¨€¨€¨€¨†  | 472/645 [00:28<00:09, 17.45it/s]eval model::  73%|¨€¨€¨€¨€¨€¨€¨€¨†  | 474/645 [00:28<00:09, 17.71it/s]eval model::  74%|¨€¨€¨€¨€¨€¨€¨€¨…  | 476/645 [00:28<00:09, 17.84it/s]eval model::  74%|¨€¨€¨€¨€¨€¨€¨€¨…  | 478/645 [00:28<00:09, 18.13it/s]eval model::  74%|¨€¨€¨€¨€¨€¨€¨€¨…  | 480/645 [00:28<00:09, 18.19it/s]eval model::  75%|¨€¨€¨€¨€¨€¨€¨€¨…  | 482/645 [00:28<00:08, 18.39it/s]eval model::  75%|¨€¨€¨€¨€¨€¨€¨€¨„  | 484/645 [00:29<00:08, 18.47it/s]eval model::  75%|¨€¨€¨€¨€¨€¨€¨€¨„  | 486/645 [00:29<00:08, 17.98it/s]eval model::  76%|¨€¨€¨€¨€¨€¨€¨€¨„  | 488/645 [00:29<00:08, 17.48it/s]eval model::  76%|¨€¨€¨€¨€¨€¨€¨€¨„  | 490/645 [00:29<00:08, 17.45it/s]eval model::  76%|¨€¨€¨€¨€¨€¨€¨€¨ƒ  | 492/645 [00:29<00:08, 17.75it/s]eval model::  77%|¨€¨€¨€¨€¨€¨€¨€¨ƒ  | 494/645 [00:29<00:09, 16.67it/s]eval model::  77%|¨€¨€¨€¨€¨€¨€¨€¨ƒ  | 496/645 [00:29<00:08, 16.79it/s]eval model::  77%|¨€¨€¨€¨€¨€¨€¨€¨ƒ  | 498/645 [00:29<00:08, 16.40it/s]eval model::  78%|¨€¨€¨€¨€¨€¨€¨€¨‚  | 500/645 [00:30<00:08, 16.31it/s]eval model::  78%|¨€¨€¨€¨€¨€¨€¨€¨‚  | 502/645 [00:30<00:08, 16.66it/s]eval model::  78%|¨€¨€¨€¨€¨€¨€¨€¨‚  | 504/645 [00:30<00:08, 16.66it/s]eval model::  78%|¨€¨€¨€¨€¨€¨€¨€¨‚  | 506/645 [00:30<00:08, 16.87it/s]eval model::  79%|¨€¨€¨€¨€¨€¨€¨€¨  | 508/645 [00:30<00:08, 16.84it/s]eval model::  79%|¨€¨€¨€¨€¨€¨€¨€¨  | 510/645 [00:30<00:07, 17.00it/s]eval model::  79%|¨€¨€¨€¨€¨€¨€¨€¨  | 512/645 [00:30<00:07, 16.98it/s]eval model::  80%|¨€¨€¨€¨€¨€¨€¨€¨  | 514/645 [00:30<00:07, 17.32it/s]eval model::  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 516/645 [00:30<00:07, 17.43it/s]eval model::  80%|¨€¨€¨€¨€¨€¨€¨€¨€  | 518/645 [00:31<00:07, 17.74it/s]eval model::  81%|¨€¨€¨€¨€¨€¨€¨€¨€  | 520/645 [00:31<00:06, 17.96it/s]eval model::  81%|¨€¨€¨€¨€¨€¨€¨€¨€  | 522/645 [00:31<00:06, 18.17it/s]eval model::  81%|¨€¨€¨€¨€¨€¨€¨€¨€  | 524/645 [00:31<00:06, 18.32it/s]eval model::  82%|¨€¨€¨€¨€¨€¨€¨€¨€¨‡ | 526/645 [00:31<00:06, 18.17it/s]eval model::  82%|¨€¨€¨€¨€¨€¨€¨€¨€¨‡ | 528/645 [00:31<00:06, 18.22it/s]eval model::  82%|¨€¨€¨€¨€¨€¨€¨€¨€¨‡ | 530/645 [00:31<00:06, 17.63it/s]eval model::  82%|¨€¨€¨€¨€¨€¨€¨€¨€¨‡ | 532/645 [00:31<00:06, 17.32it/s]eval model::  83%|¨€¨€¨€¨€¨€¨€¨€¨€¨† | 534/645 [00:31<00:06, 16.90it/s]eval model::  83%|¨€¨€¨€¨€¨€¨€¨€¨€¨† | 536/645 [00:32<00:06, 16.99it/s]eval model::  83%|¨€¨€¨€¨€¨€¨€¨€¨€¨† | 538/645 [00:32<00:06, 17.02it/s]eval model::  84%|¨€¨€¨€¨€¨€¨€¨€¨€¨† | 540/645 [00:32<00:06, 17.26it/s]eval model::  84%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 542/645 [00:32<00:05, 17.25it/s]eval model::  84%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 544/645 [00:32<00:06, 16.48it/s]eval model::  85%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 546/645 [00:32<00:06, 15.74it/s]eval model::  85%|¨€¨€¨€¨€¨€¨€¨€¨€¨… | 548/645 [00:32<00:06, 15.59it/s]eval model::  85%|¨€¨€¨€¨€¨€¨€¨€¨€¨„ | 550/645 [00:32<00:05, 16.16it/s]eval model::  86%|¨€¨€¨€¨€¨€¨€¨€¨€¨„ | 552/645 [00:33<00:05, 16.68it/s]eval model::  86%|¨€¨€¨€¨€¨€¨€¨€¨€¨„ | 554/645 [00:33<00:05, 16.55it/s]eval model::  86%|¨€¨€¨€¨€¨€¨€¨€¨€¨„ | 556/645 [00:33<00:05, 16.91it/s]eval model::  87%|¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ | 558/645 [00:33<00:05, 17.27it/s]eval model::  87%|¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ | 560/645 [00:33<00:04, 17.31it/s]eval model::  87%|¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ | 562/645 [00:33<00:04, 17.65it/s]eval model::  87%|¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ | 564/645 [00:33<00:04, 17.80it/s]eval model::  88%|¨€¨€¨€¨€¨€¨€¨€¨€¨‚ | 566/645 [00:33<00:04, 17.96it/s]eval model::  88%|¨€¨€¨€¨€¨€¨€¨€¨€¨‚ | 568/645 [00:33<00:04, 18.27it/s]eval model::  88%|¨€¨€¨€¨€¨€¨€¨€¨€¨‚ | 570/645 [00:34<00:04, 17.94it/s]eval model::  89%|¨€¨€¨€¨€¨€¨€¨€¨€¨‚ | 572/645 [00:34<00:04, 17.67it/s]eval model::  89%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 574/645 [00:34<00:03, 17.96it/s]eval model::  89%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 576/645 [00:34<00:03, 18.02it/s]eval model::  90%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 578/645 [00:34<00:03, 17.92it/s]eval model::  90%|¨€¨€¨€¨€¨€¨€¨€¨€¨ | 580/645 [00:34<00:03, 18.14it/s]eval model::  90%|¨€¨€¨€¨€¨€¨€¨€¨€¨€ | 582/645 [00:34<00:03, 18.05it/s]eval model::  91%|¨€¨€¨€¨€¨€¨€¨€¨€¨€ | 584/645 [00:34<00:03, 18.23it/s]eval model::  91%|¨€¨€¨€¨€¨€¨€¨€¨€¨€ | 586/645 [00:34<00:03, 18.37it/s]eval model::  91%|¨€¨€¨€¨€¨€¨€¨€¨€¨€ | 588/645 [00:35<00:03, 18.56it/s]eval model::  91%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‡| 590/645 [00:35<00:02, 18.65it/s]eval model::  92%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‡| 592/645 [00:35<00:02, 18.58it/s]eval model::  92%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‡| 594/645 [00:35<00:02, 18.72it/s]eval model::  92%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‡| 596/645 [00:35<00:02, 18.50it/s]eval model::  93%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨†| 598/645 [00:35<00:02, 18.50it/s]eval model::  93%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨†| 600/645 [00:35<00:02, 18.30it/s]eval model::  93%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨†| 602/645 [00:35<00:02, 18.31it/s]eval model::  94%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨†| 604/645 [00:35<00:02, 18.26it/s]eval model::  94%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 606/645 [00:36<00:02, 18.13it/s]eval model::  94%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 608/645 [00:36<00:02, 18.09it/s]eval model::  95%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 610/645 [00:36<00:02, 16.84it/s]eval model::  95%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨…| 612/645 [00:36<00:01, 17.35it/s]eval model::  95%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨„| 614/645 [00:36<00:01, 17.45it/s]eval model::  96%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨„| 616/645 [00:36<00:01, 17.20it/s]eval model::  96%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨„| 618/645 [00:36<00:01, 17.30it/s]eval model::  96%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨„| 620/645 [00:36<00:01, 17.25it/s]eval model::  96%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ| 622/645 [00:36<00:01, 17.20it/s]eval model::  97%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ| 624/645 [00:37<00:01, 17.62it/s]eval model::  97%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ| 626/645 [00:37<00:01, 17.64it/s]eval model::  97%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨ƒ| 628/645 [00:37<00:00, 17.37it/s]eval model::  98%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‚| 630/645 [00:37<00:00, 17.51it/s]eval model::  98%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‚| 632/645 [00:37<00:00, 17.85it/s]eval model::  98%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‚| 634/645 [00:37<00:00, 17.16it/s]eval model::  99%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨‚| 636/645 [00:37<00:00, 17.27it/s]eval model::  99%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨| 638/645 [00:37<00:00, 17.67it/s]eval model::  99%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨| 640/645 [00:38<00:00, 16.91it/s]eval model:: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨| 642/645 [00:38<00:00, 17.45it/s]eval model:: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨| 644/645 [00:38<00:00, 17.16it/s]
+[2022/05/30 22:04:16] ppocr INFO: metric eval ***************
+[2022/05/30 22:04:16] ppocr INFO: acc:0.8540372538192973
+[2022/05/30 22:04:16] ppocr INFO: norm_edit_dis:0.9297421878207242
+[2022/05/30 22:04:16] ppocr INFO: fps:16.95761734762618
