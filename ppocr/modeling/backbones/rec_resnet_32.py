@@ -1,4 +1,4 @@
-# copyright (c) 2021 PaddlePaddle Authors. All Rights Reserve.
+# copyright (c) 2022 PaddlePaddle Authors. All Rights Reserve.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,10 +51,10 @@ class ResNet32(nn.Layer):
     def forward(self, inputs):
         """
         Args:
-            inputs (torch.Tensor): input feature
+            inputs (Tensor): input feature
 
         Returns:
-             torch.Tensor: output feature
+             Tensor: output feature
 
         """
         return self.ConvNet(inputs)
@@ -104,10 +104,10 @@ class BasicBlock(nn.Layer):
     def forward(self, x):
         """
         Args:
-            x (torch.Tensor): input feature
+            x (Tensor): input feature
 
         Returns:
-            torch.Tensor: output feature of the BasicBlock
+            Tensor: output feature of the BasicBlock
 
         """
         residual = x
@@ -248,10 +248,10 @@ class ResNet(nn.Layer):
     def forward(self, x):
         """
         Args:
-            x (torch.Tensor): input feature
+            x (Tensor): input feature
 
         Returns:
-            torch.Tensor: output feature of the Resnet
+            Tensor: output feature of the Resnet
 
         """
         x = self.conv0_1(x)

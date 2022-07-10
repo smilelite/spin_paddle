@@ -73,10 +73,10 @@ class BidirectionalLSTM(nn.Layer):
         """
 
         Args:
-            input_feature (Torch.Tensor): visual feature [batch_size x T x input_size]
+            input_feature (Tensor): visual feature [batch_size x T x input_size]
 
         Returns:
-            Torch.Tensor: LSTM output contextual feature [batch_size x T x output_size]
+            Tensor: LSTM output contextual feature [batch_size x T x output_size]
 
         """
 
